@@ -1,0 +1,34 @@
+strategies:
+  orb_15min:
+    name: "Opening Range Breakout 15min"
+    enabled: true
+    timeframe: "5min"
+    orb_window: 15
+    stop_loss_points: 8
+    take_profit_1: 20
+    take_profit_2: 40
+    volume_multiplier: 1.5
+
+  vwap_scalp:
+    name: "VWAP Scalping + Bollinger + RSI"
+    enabled: true
+    timeframe: "1min"
+    bb_period: 20
+    bb_std: 2.0
+    rsi_period: 7
+    rsi_oversold: 25
+    rsi_overbought: 75
+    stop_loss_points: 4
+    take_profit_points: 8
+    max_hold_minutes: 30
+
+  ema_cross:
+    name: "9/21 EMA Crossover + VWAP"
+    enabled: true
+    timeframe: "5min"
+    ema_fast: 9
+    ema_slow: 21
+    stop_loss_atr: 1.5
+    take_profit_1_rr: 2.5
+    take_profit_2_rr: 5.0
+    volume_multiplier: 1.0
